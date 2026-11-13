@@ -94,9 +94,10 @@ flowchart TD
 def make_llm(temperature: float = 0.2) -> ChatGroq:
     return ChatGroq(
         model=MODEL_NAME,
-        groq_api_key=os.getenv("GROQ_API_KEY"),
+        #groq_api_key=os.getenv("GROQ_API_KEY"),
         temperature=temperature,
         max_tokens=8192,
+        
     )
 
 
